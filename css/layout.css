@@ -1,0 +1,51 @@
+nav ul li a{
+    display:flex;
+    justify-content: center;
+}
+.main{
+    display: grid;
+    
+}
+figure{
+    display: flex;
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-between;
+}
+@media(min-width: 1024px){
+    header{
+        text-align: center;
+        width:100%;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li{
+        width:100%;
+    }
+    figure{
+        display: flex;
+        max-width:none;
+        flex-direction: column;
+        
+    }
+    figure img{
+        min-width:450px
+    }
+    .basics{grid-area: basics;}
+    .tips{grid-area:tips;}
+    .aside{grid-area: aside;}
+    .review{grid-area: review;}
+    .examples{grid-area: examples;}
+    .main{
+        display: grid;
+        grid-template-areas: 
+        'aside basics basics' 
+        'aside examples review' 
+        'aside tips review';
+    }
+
+}
+
+
