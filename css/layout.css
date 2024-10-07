@@ -12,6 +12,12 @@ figure{
     align-items: center;
     justify-content: space-between;
 }
+@media(min-width: 500px) and (max-width:1023px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 @media(min-width: 1024px){
     header{
         text-align: center;
